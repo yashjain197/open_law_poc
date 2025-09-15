@@ -1,3 +1,4 @@
+// src/petitionTemplate.js
 export const PETITION_TITLE = "Public Petition";
 
 export const PETITION_TEMPLATE = `
@@ -5,6 +6,7 @@ export const PETITION_TEMPLATE = `
 
 **Petitioner:** [[Petitioner Name: Text]]  
 **Petitioner Email:** [[Petitioner Email: Identity | Signature]]  
+**Petitioner Wallet:** [[Petitioner Wallet: EthAddress]]  
 **Date:** [[Filing Date: Date]]
 
 **Recipient / Authority:** [[Recipient Name: Text]]
@@ -23,8 +25,8 @@ The Petitioner agrees that this petition may be displayed publicly. [[Allow Publ
 ---
 
 **Signature of Petitioner**  
-[[Petitioner Email]]  
-__________________________
+Wallet: [[Petitioner Wallet]]  
+Email Identity: [[Petitioner Email]]  
+__________________________  
 [[Petitioner Name]]
-
 `;
